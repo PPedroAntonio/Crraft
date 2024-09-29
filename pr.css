@@ -1,0 +1,167 @@
+@media (max-width: 1024px) {
+    .logo h1 {
+        margin: 0 100px 0 0;
+    }
+    .logo-image {
+        width: 60px;
+        height: 60px;
+    }
+    header nav ul li {
+        margin-left: 15px;
+    }
+    header nav ul li a {
+        font-size: 0.9em;
+    }
+    .about-section h1 {
+        font-size: 2em;
+    }
+    .about-section p {
+        font-size: 1.1em;
+    }
+    .icon-text h2 {
+        font-size: 1.5em;
+    }
+    .icon-text p,
+    .item p {
+        font-size: 1em;
+    }
+    .icon-text2 h2 {
+        font-size: 1.5em;
+    }
+    .footer-section h2 {
+        font-size: 1.3em;
+    }
+    .footer-section p,
+    .footer-section ul {
+        font-size: 0.9em;
+    }
+    .footer-bottom {
+        font-size: 0.8em;
+    }
+}
+
+
+/* For mobile devices */
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    .logo h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+    .logo-image {
+        width: 50px;
+        height: 50px;
+    }
+    .about-section h1 {
+        font-size: 1.8em;
+    }
+    .about-section p {
+        font-size: 1em;
+    }
+    .icon-text,
+    .icon-text2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .icon-text img,
+    .item img {
+        max-width: 80px;
+    }
+    .icon-text h2,
+    .icon-text2 h2 {
+        font-size: 1.5em;
+    }
+    .item p {
+        font-size: 0.9em;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section h2 {
+        font-size: 1.2em;
+    }
+    .footer-section p,
+    .footer-section ul {
+        font-size: 0.9em;
+    }
+    .footer-section {
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .social-icons a img {
+        width: 28px;
+        height: 28px;
+    }
+    .footer-bottom {
+        font-size: 0.8em;
+    }
+}
+
+
+/* For very small mobile devices */
+
+@media (max-width: 480px) {
+    .header {
+        padding: 135px;
+    }
+    .logo h1 {
+        font-size: 1.2em;
+    }
+    .logo-image {
+        width: 40px;
+        height: 40px;
+    }
+    .about-section h1 {
+        font-size: 1.5em;
+    }
+    .about-section p {
+        font-size: 0.9em;
+    }
+    .icon-text h2,
+    .icon-text2 h2 {
+        font-size: 1.3em;
+    }
+    .item img {
+        max-width: 60px;
+    }
+    .footer-section h2 {
+        font-size: 1.1em;
+    }
+    .footer-section p,
+    .footer-section ul {
+        font-size: 0.8em;
+    }
+    .footer-bottom {
+        font-size: 0.7em;
+    }
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+    .footer-section {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .social-icons a {
+        font-size: 1.2em;
+    }
+}

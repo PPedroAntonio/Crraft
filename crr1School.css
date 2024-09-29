@@ -1,0 +1,332 @@
+/* Reset and Basic Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Header */
+
+header {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    /* Aligns items (h1 and image) vertically centered */
+    text-decoration: none;
+    color: #f8f5f5;
+    /* Removes underline from the link */
+}
+
+
+/* Modal Styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 5%;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* droped down */
+
+
+/*end droped down */
+
+h1 {
+    font-size: 28px;
+    color: white;
+}
+
+h1 a {
+    color: white;
+    /* Inherits the color from the parent (h1), keeping it the same */
+    text-decoration: none;
+    /* Removes the underline */
+}
+
+h1 a:visited {
+    color: white;
+    /* Ensures visited links have the same color */
+    border-bottom: 2px solid #333;
+}
+
+.logo h1 {
+    margin: 0 200px 0 0;
+    /* Adds some space between the text and the image */
+}
+
+.logo-image {
+    width: 80px;
+    /* Set the width of the image */
+    height: 80px;
+    /* Set the height of the image */
+    border-radius: 50%;
+    /* Makes the image circular */
+    object-fit: cover;
+    /* Ensures the image covers the set dimensions without stretching */
+}
+
+header .logo h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+li a {
+    color: initial;
+    /* Set the default color for the link */
+    text-decoration: none;
+    /* Removes the underline from the link */
+}
+
+li a:hover {
+    color: rgb(150, 141, 141);
+    /* Replace 'your-desired-color' with the color you want on hover */
+}
+
+header nav ul li {
+    margin-left: 20px;
+    background-color: #333;
+    ;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+
+/* Header */
+
+
+/* Hero Section */
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+}
+
+.space {
+    text-align: center;
+}
+
+.label1 {
+    color: #000;
+    border-radius: 10px;
+    background: linear-gradient(to right, #45a1f2, #00f2fe);
+    padding: 1px;
+    transition: transform 0.3s ease;
+    font-weight: bold;
+}
+
+.label1:hover {
+    transform: translateY(-10px);
+}
+
+
+/* Phases Section */
+
+.phases {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.phase-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.phase-card:hover {
+    transform: translateY(-10px);
+}
+
+.phase-card img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.phase-card h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #ff6b6b;
+}
+
+
+/* Resizing the image */
+
+.phase-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.phase1Text {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.phase1Text h2 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.phase1Text p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.read-btn,
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #4facfe;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-right: 10px;
+    /* Space between the two buttons */
+}
+
+.read-btn:hover,
+.download-btn:hover {
+    background-color: #00f2fe;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+
+/* Modal Styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 5000px;
+    border-radius: 3px;
+}
+
+.close header {
+    color: green;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}

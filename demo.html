@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example with Modal</title>
+    <style>
+        .phases {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin: 20px;
+        }
+        
+        .phase-card {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .phase-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .phase-card img {
+            width: 100px;
+            margin-bottom: 15px;
+        }
+        
+        .phase-card h2 {
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+            color: #ff6b6b;
+        }
+        
+        .phase-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+        /* Button styling */
+        
+        .more-btn {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        
+        .more-btn:hover {
+            background-color: #e55a5a;
+        }
+        /* Modal styling */
+        
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+        .modal-content {
+            background-color: white;
+            margin: 10% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 400px;
+            border-radius: 10px;
+            position: relative;
+            text-align: left;
+        }
+        
+        .modal-content h1 {
+            margin-top: 0;
+        }
+        
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #aaa;
+            cursor: pointer;
+        }
+        
+        .close-btn:hover {
+            color: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="phases">
+        <div class="phase-card">
+            <img src="logo.png" alt="Robot Phase 1">
+            <h2>Phase 1</h2>
+            <p>Description for Phase 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <!-- Button to show more content -->
+            <button class="more-btn" onclick="showModal('special-heading')">More</button>
+        </div>
+    </section>
+    <section class="phases">
+        <div class="phase-card">
+            <img src="logo.png" alt="Robot Phase 1">
+            <h2>Phase 2</h2>
+            <p>Description for Phase 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <!-- Button to show more content -->
+            <button class="more-btn" onclick="showModal('paragraph1')">More</button>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <!-- Placeholder for dynamic content -->
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <!-- Hidden content -->
+    <div id="special-heading" style="display: none;">
+        <h1>This is a heading with an ID</h1>
+        <p>This is a paragraph related to Phase 1.</p>
+    </div>
+    <div id="paragraph1" style="display: none;">
+        <h1>This is another heading with an ID</h1>
+        <p>This is a paragraph related to Phase 2.</p>
+    </div>
+
+    <script>
+        function showModal(contentId) {
+            const content = document.getElementById(contentId).innerHTML;
+            document.getElementById('modal-body').innerHTML = content;
+            document.getElementById('myModal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('myModal').style.display = 'none';
+        }
+
+        // Close the modal if the user clicks anywhere outside of the modal content
+        window.onclick = function(event) {
+            const modal = document.getElementById('myModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

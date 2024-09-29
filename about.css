@@ -1,0 +1,496 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 20;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    padding-top: 60px;
+    /* Add padding equal to header height */
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    /* Make the header fixed */
+    top: 0;
+    /* Fix it to the top */
+    width: 100%;
+    /* Make sure it spans the entire width */
+    z-index: 1000;
+    /* Ensure it stays on top of other content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Optional: add shadow for depth */
+}
+
+.main-content {
+    padding: 20px;
+    /* Your regular content padding */
+    margin-top: 60px;
+    /* Adjust this to match your header height */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    /* Aligns items (h1 and image) vertically centered */
+    text-decoration: none;
+    color: #f8f5f5;
+    /* Removes underline from the link */
+}
+
+
+/* Modal Styles */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    border-radius: 8px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* droped down */
+
+
+/*end droped down */
+
+h1 a {
+    color: inherit;
+    /* Inherits the color from the parent (h1), keeping it the same */
+    text-decoration: none;
+    /* Removes the underline */
+}
+
+h1 a:visited {
+    color: inherit;
+    /* Ensures visited links have the same color */
+}
+
+.logo h1 {
+    margin: 0 200px 0 0;
+    /* Adds some space between the text and the image */
+}
+
+.logo-image {
+    width: 80px;
+    /* Set the width of the image */
+    height: 80px;
+    /* Set the height of the image */
+    border-radius: 50%;
+    /* Makes the image circular */
+    object-fit: cover;
+    /* Ensures the image covers the set dimensions without stretching */
+}
+
+header .logo h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+li a {
+    color: initial;
+    /* Set the default color for the link */
+    text-decoration: none;
+    /* Removes the underline from the link */
+}
+
+li a:hover {
+    color: rgb(150, 141, 141);
+    /* Replace 'your-desired-color' with the color you want on hover */
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+body,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    background-color: #333;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #333;
+    color: #555;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #6f6b6b4b;
+    color: yellow
+}
+
+
+/* Show dropdown menu on hover */
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.about-section {
+    padding: 40px 20px;
+    background-color: #333;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 1px;
+    border-radius: 8px;
+    margin-top: 109px;
+}
+
+.about-section h1 {
+    font-size: 1.3em;
+    text-align: center;
+    color: white;
+    margin: 0px;
+    padding: 1px 1px;
+    border: 0px
+}
+
+.about-section p {
+    font-size: 1em;
+    margin-top: 0px;
+}
+
+.icon-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-text:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon-text img {
+    max-width: 100px;
+    margin-right: 20px;
+    border-radius: 15%;
+}
+
+.icon-text div {
+    max-width: 80%;
+}
+
+.icon-text h2 {
+    font-size: 1.3em;
+    /* Larger font size for the title */
+    font-weight: 700;
+    /* Bold font weight */
+    color: #333;
+    /* Darker color for the title */
+    margin-bottom: 10px;
+    /* Space below the title */
+}
+
+.icon-text p {
+    font-size: 1em;
+    color: #555;
+    text-align: left;
+}
+
+.icon-text2 {
+    display: flex;
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: flex-start;
+    /* Align items to the start */
+    margin-bottom: 40px;
+    /* Space below the container */
+    padding: 20px;
+    /* Spacing inside the container */
+    background-color: #f9f9f9;
+    /* Light background color */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 40px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    /* Smooth transition for hover effects */
+}
+
+.icon-text2:hover {
+    transform: translateY(-5px);
+    /* Slightly lift the container on hover */
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    /* Enhanced shadow on hover */
+}
+
+
+/* Content container styling */
+
+.content {
+    display: flex;
+    /* Align items horizontally */
+    flex-direction: column;
+    /* Stack items vertically within the flex container */
+    gap: 20px;
+    /* Space between items */
+}
+
+
+/* Individual item styling */
+
+.item {
+    display: flex;
+    /* Align image and text horizontally */
+}
+
+
+/* Image styling */
+
+.item img {
+    /* Set maximum width of image */
+    height: auto;
+    /* Maintain aspect ratio */
+    border-radius: 15%;
+    /* Round the image */
+    object-fit: cover;
+    max-width: 100px;
+    /* Ensure the image fits well within the dimensions */
+}
+
+
+/* Paragraph styling */
+
+.item p {
+    font-size: 1em;
+    /* Slightly larger font size for readability */
+    line-height: 1.6;
+    /* Improved line spacing for readability */
+    color: #555;
+    /* Lighter color for text */
+}
+
+
+/* Title styling */
+
+.icon-text2 h2 {
+    font-size: 1.3em;
+    /* Larger font size for the title */
+    font-weight: 700;
+    /* Bold font weight */
+    color: #333;
+    /* Darker color for the title */
+    margin-bottom: 20px;
+    /* Space below the title */
+}
+
+.copy-container {
+    position: relative;
+    display: inline-block;
+}
+
+.copy-icon {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    left: 300%;
+}
+
+.citation-text {
+    color: white;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background-color: #333;
+    color: white;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.footer-section {
+    max-width: 300px;
+    margin-bottom: 20px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h2 {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.footer-section p,
+.footer-section ul {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #aaa;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #aaa;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #f05a28;
+}
+
+.social-icons a {
+    color: white;
+    margin-right: 15px;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f05a28;
+}
+
+.social-icons a img {
+    width: 34px;
+    /* Adjust the width according to your needs */
+    height: 34px;
+    /* Adjust the height according to your needs */
+    margin: 0 0px;
+    /* Add some spacing between icons */
+    transition: transform 0.3s ease;
+    /* Add a hover effect */
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+    /* Scale the image on hover */
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    color: #777;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        max-width: 90%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .social-icons {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section h2 {
+        font-size: 1.1em;
+    }
+    .footer-section p,
+    .footer-section ul {
+        font-size: 0.9em;
+    }
+    .footer-bottom {
+        font-size: 0.8em;
+    }
+    .social-icons a {
+        font-size: 0.9em;
+    }
+    .social-icons a img {
+        width: 30px;
+        height: 30px;
+    }
+}

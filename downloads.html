@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF and File List Downloads</title>
+    <link rel="stylesheet" href="downloads.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+
+            <h1><a href="crraft1.html">CRRAFT</a></h1>
+            <a href="crraft1.html">
+                <img src="logo.png" alt="CRRAFT Logo" class="logo-image">
+            </a>
+
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Our Programs</a>
+                    <div class="dropdown-content">
+                        <a href="crr1School.html">CRR Program For School</a>
+                        <a href="partners.html#graduate">CRR Program For Home</a>
+                        <a href="partners.html#teachers">CRR Program For Partnership</a>
+                    </div>
+                </li>
+                <li class="dropdown">
+                    <a href="#">Partners</a>
+                    <div class="dropdown-content">
+                        <a href="partners.html#principle">Principle Investigators & Senior Personnel</a>
+                        <a href="partners.html#graduate">Graduate Researchers</a>
+                        <a href="partners.html#teachers">Teachers & Educational Assistants</a>
+                        <a href="partners.html#parent">Parent Leaders</a>
+                        <a href="partners.html#undergraduate">Undergraduate Research Assistants</a>
+                        <a href="partners.html#advisory">Our Advisory Board</a>
+                        <a href="partners.html#past">Past Partners</a>
+                    </div>
+                </li>
+                <li><a href="ourwork.html">Our Work</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="grid-container">
+        <!-- PDF Item -->
+        <div class="download-container">
+            <div class="tooltip">
+                <div class="pdf-icon"></div>
+                <span class="tooltiptext">Start Learning with Phase 1. </span>
+            </div>
+            <div class="download-text">Phase 1 <br> CRR program</div>
+            <div class="button-group">
+                <a href="your-pdf-file1.pdf" target="_blank" class="button">Open</a>
+                <a href="your-pdf-file1.pdf" download class="button">Download</a>
+            </div>
+        </div>
+        <div class="download-container">
+            <div class="tooltip">
+                <div class="folder-icon" onclick="toggleFileList('file1')"></div>
+                <span class="tooltiptext">This Folder Contains Nothing</span>
+                <div class="download-text">Phase 1 CPR program files</div>
+                <div id="file1" class="file-list">
+
+                    <div class="download-text2">Phase 1 <br>CRR program</div>
+                    <div class="button-group2">
+                        <a href="your-pdf-file1.pdf" target="_blank" class="button2">Read</a>
+                        <a href="your-pdf-file1.pdf" download class="button2">Download</a>
+                    </div>
+
+                    <!-- Add more files as needed -->
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section contact-us">
+                <h2>Contact Us</h2>
+                <p>123 CRRAFT Robotics <br> City<br> Email: info@craftrobotics.com</p>
+            </div>
+            <div class="footer-section quick-links">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <h2>Follow Us</h2>
+                <div class="social-icons">
+                    <a href="#"><img src="facebook.avif" alt="Facebook"></a>
+
+                    <a href="#"><img src="instagram.jpeg" alt="Instagram"></a>
+                    <a href="#"><img src="linkeding.png" alt="LinkedIn"></a>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 CRRAFT Robotics. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        function toggleFileList(id) {
+            var fileList = document.getElementById(id);
+            if (fileList.style.display === "none" || fileList.style.display === "") {
+                fileList.style.display = "block";
+            } else {
+                fileList.style.display = "none";
+            }
+        }
+    </script>
+
+
+</body>
+
+
+</html>

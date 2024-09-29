@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    background-color: #2980b9;
+    color: white;
+    padding: 20px 0;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin: 10px 0 0;
+}
+
+h1 {
+    font-size: 28px;
+    color: #2c3e50;
+    border-bottom: 2px solid #00aaff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+    color: #00aaff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-top: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+ul {
+    margin-left: 20px;
+    list-style-type: none;
+    padding: 0;
+    font-size: 18px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    padding: 8px;
+    background: #eef7ff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+ul li:before {
+    content: '•';
+    color: #00aaff;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.highlight {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+.image-placeholder {
+    width: 100%;
+    height: 200px;
+    background-color: #bdc3c7;
+    color: #7f8c8d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 8px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.nothing {
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #4facfe;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #00f2fe;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #34495e;
+    color: white;
+    border-radius: 8px;
+}
+
+.container1 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.small-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 32px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 28px;
+    }
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    .container {
+        padding: 15px;
+    }
+    .section {
+        padding: 15px;
+    }
+    .button {
+        padding: 8px 15px;
+        font-size: 0.9em;
+    }
+    ul li {
+        font-size: 14px;
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    p,
+    ul li {
+        font-size: 14px;
+    }
+    .container {
+        padding: 10px;
+    }
+    .section {
+        padding: 10px;
+    }
+    .button {
+        padding: 8px 12px;
+        font-size: 0.8em;
+    }
+    ul li {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .small-image {
+        width: 40px;
+        height: 40px;
+    }
+}
